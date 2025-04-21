@@ -1,9 +1,3 @@
-//pin usage as follow:
-//             CS  DC/RS  RESET  SDI/MOSI  SDO/MISO  SCK  LED    VCC     GND    
-//Arduino Uno  A3   A1     A2      11        12      13   A0   5V/3.3V   GND
-//            T_IRQ  T_DO  T_DIN  T_CS  T_CLK
-//Arduino Uno  6      7      8     9      10
-
 #include <LCDWIKI_SPI.h> //Hardware-specific library
 #include <LCDWIKI_TOUCH.h> //touch screen library
 
@@ -64,13 +58,13 @@ boolean is_pressed(int16_t x1,int16_t y1,int16_t x2,int16_t y2,int16_t px,int16_
     }
  }
 
-int WarningPin = A0;
+int WarningPin = A8;
 
-int BreakerIn1 = 28;
-int BreakerOut1 = 26;
+int BreakerIn1 = 11;
+int BreakerOut1 = 15;
 
-int IsolatorIn1 = 24;
-int IsolatorOut1 = 22;
+int IsolatorIn1 = 13;
+int IsolatorOut1 = 17;
 
 String TouchValue = "";
 
